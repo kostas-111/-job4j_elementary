@@ -15,6 +15,7 @@ class PointTest {
         double output = Point.distance(x1, y1, x2, y2);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
+
     @Test
     void whenXMinus6Y0ToX34Y0Then40() {
         double expected = 40;
