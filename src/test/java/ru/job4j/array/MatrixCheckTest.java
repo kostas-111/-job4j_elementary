@@ -19,8 +19,9 @@ class MatrixCheckTest {
     @Test
     public void whenNoMonoHorizontalRow0() {
         char[][] input = {
-                {'X', ' ', ' '},
-                {' ', ' ', ' '}
+                {'X', ' ', 'X'},
+                {' ', ' ', ' '},
+                {'X', ' ', 'X'}
         };
         int row = 0;
         boolean result = MatrixCheck.monoHorizontal(input, row);
@@ -31,7 +32,8 @@ class MatrixCheckTest {
     public void whenNoMonoHorizontalRow1() {
         char[][] input = {
                 {'X', ' ', ' '},
-                {'X', 'X', ' '}
+                {'X', 'X', ' '},
+                {'X', 'X', 'X'}
         };
         int row = 1;
         boolean result = MatrixCheck.monoHorizontal(input, row);
