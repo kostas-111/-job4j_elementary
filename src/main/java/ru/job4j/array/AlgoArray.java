@@ -12,7 +12,6 @@ public class AlgoArray {
         temp = array[4];
         array[4] = array[3];
         array[3] = temp;
-
         for (int ar : array) {
             System.out.println(ar);
         }
