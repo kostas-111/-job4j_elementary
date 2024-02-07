@@ -31,4 +31,13 @@ class PointTest {
         double output = a.distance(b);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void whenXMinus6Y0Z10ToX34Y0Z5Then40() {
+        Point a = new Point(-6, 0, 10);
+        Point b = new Point(34, 7, 5);
+        double expected = 40.915;
+        double output = a.distance3d(b);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
 }
